@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Safari Ventures</title>
+    <link rel="stylesheet" href="Style1.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Global Safari Ventures</h1>
+        <p>Questions? CALL US: +2547XXXXXXXX</p>
+    </header>
+
+    <!-- Navigation Links -->
+    <div class="inline-blocks">
+        <a href="Home Page.html">Home</a>
+        <a href="#plans">Travel Packages</a>
+        <a href="#booking">Book Now</a>
+    </div>
+
+    <!-- Boxed Paragraph -->
+    <p class="boxed-paragraph">
+        "The world is a book, and those who do not travel read only one page."<br>
+        - Saint Augustine
+    </p>
+
+    <!-- Top Destinations -->
+    <h2 class="lineb">Top Destinations</h2>
+    <div class="image-container">
+        <figure>
+            <img src="Images/dubai1.jpeg" alt="Dubai, Saudi Arabia">
+            <figcaption><a href="dubai1.html">Dubai, Saudi Arabia</a></figcaption>
+        </figure>
+        <figure>
+            <img src="Images/Mombasa.jpeg" alt="Mombasa, Kenya">
+            <figcaption><a href="mombasa1.html">Mombasa, Kenya</a></figcaption>
+        </figure>
+        <figure>
+            <img src="Images/Paris.jpeg" alt="Paris, France">
+            <figcaption><a href="paris1.html">Paris, France</a></figcaption>
+        </figure>
+    </div>
+
+    <!-- Trending Destinations -->
+    <h2 class="lineb">Trending Destinations</h2>
+    <div class="image-container">
+        <figure>
+            <img src="Images/japan.jpeg" alt="Tokyo, Japan">
+            <figcaption><a href="tokyo.html">Tokyo, Japan</a></figcaption>
+        </figure>
+        <figure>
+            <img src="Images/Seoul.jpg" alt="Seoul, South Korea">
+            <figcaption><a href="seoul1.html">Seoul, South Korea</a></figcaption>
+        </figure>
+        <figure>
+            <img src="Images/viti%20levu.jpeg" alt="Viti Levu, Fiji">
+            <figcaption><a href="vitilevu.html">Viti Levu, Fiji</a></figcaption>
+        </figure>
+    </div>
+
+<!-- travel plans -->
+<div class="travel" id="plans">
+<h1 class="my-4">Travel Plans</h1>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped text-center shadow">
+        <thead>
+            <tr>
+                <th>Destination</th>
+                <th>Duration</th>
+                <th>Price (USD)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dubai</td>
+                <td>5 days</td>
+                <td>1500</td>
+            </tr>
+            <tr>
+                <td>Mombasa</td>
+                <td>3 days</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>Paris</td>
+                <td>5 days</td>
+                <td>2500</td>
+            </tr>
+            <tr>
+                <td>Seoul</td>
+                <td>6 days</td>
+                <td>2800</td>
+            </tr>
+            <tr>
+                <td>Tokyo</td>
+                <td>6 days</td>
+                <td>3200</td>
+            </tr>
+            <tr>
+                <td>Viti Levu (Fiji)</td>
+                <td>7 days</td>
+                <td>4500</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+
+<!-- Booking section -->
+ <div class="content" id="booking">
+    <div class="container mt-5">
+        <h1 class="text-center text-white">Booking Form</h1>
+        <form action="" class="book-now shadow-lg p-4" style="max-width: 600px;">
+            <div class="mb-3">
+                <label for="full-name" class="form-label">Full Name:</label>
+                <input type="text" id="full-name" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone-number" class="form-label">Phone Number:</label>
+                <input type="tel" id="phone-number" class="form-control" placeholder="+254XXXXXXXXX" required pattern="\+[0-9]{1,3}[0-9]{9}" title="Please enter a valid mobile number">
+            </div>
+            <div class="mb-3">
+                <label for="email-address" class="form-label">Email Address:</label>
+                <input type="email" id="email-address" class="form-control" placeholder="Email Address" required>
+            </div>
+            <div class="mb-3">
+                <label for="destination" class="form-label">Destination:</label>
+                <select id="destination" name="destination" class="form-select" required>
+                    <option value="" disabled selected>Select a destination</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Mombasa">Mombasa</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Tokyo">Tokyo</option>
+                    <option value="Seoul">Seoul</option>
+                    <option value="Viti Levu">Viti Levu</option>
+                </select>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary w-50">Book Now</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            Follow Us:
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">X</a>
+            <a href="#" target="_blank">Tiktok</a>
+        </div>
+        <div class="mt-2">
+            &copy; 2024 Global Safari Ventures. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <title>Viti Levu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin-top: 80px;
+        }
+
+        .main-header {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .main-header p {
+            font-size: 1.2rem;
+        }
+
+        .navbar {
+            background-color: #333;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            margin: 0 5px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #45a049;
+            border-radius: 5px;
+        }
+
+        .destination-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        .destination-content h1 {
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .main-image {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .destination-content p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .destination-overview h2,
+        .destination-overview h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .destination-details {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .destination-details li {
+            font-size: 1.1rem;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .destination-details li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination-details img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .destination-details li:hover img {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-image {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .main-footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+
+        .main-footer a:hover {
+            color: #45a049;
+        }
+
+        .main-footer div {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar a {
+                font-size: 1rem;
+                padding: 8px 15px;
+            }
+
+            .destination-details {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .destination-details li {
+                font-size: 1rem;
+            }
+
+            .main-header h1 {
+                font-size: 2rem;
+            }
+
+            .destination-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .main-footer a {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .destination-details {
+                grid-template-columns: 1fr;
+            }
+
+            .main-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .destination-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .destination-details li {
+                font-size: 0.9rem;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Explore the World with Global Safari Ventures</h1>
+        <p>Questions? CALL US: +2547XXXXXXXX</p>
+    </header>
+
+    <div class="navbar">
+        <a href="Home Page.html">Home</a>
+        <a href="Home Page.html#plans">Travel Packages</a>
+        <a href="Home Page.html#booking">Book Now</a>
+        <a href="dubai1.html">Dubai</a>
+        <a href="paris1.html">Paris</a>
+        <a href="vitilevu.html">Viti Levu</a>
+        <a href="mombasa1.html">Mombasa</a>
+        <a href="seoul1.html">Seoul</a>
+        <a href="tokyo.html">Tokyo</a>
+    </div>
+
+    <div class="destination-content">
+        <h1>Viti Levu</h1>
+        <img src="images1/Viti.jpeg" alt="Viti Levu Island" class="main-image" />
+        <p><strong>Region:</strong> Fiji</p>
+        <p>Viti Levu, the largest island in Fiji, boasts lush rainforests, crystal-clear waters, and a welcoming island vibe.</p>
+
+        <div class="destination-overview">
+            <h2>Top Attractions:</h2>
+            <ul class="destination-details">
+                <li><img src="images1/BeachDenarau.jpeg" alt="Beach" />Denarau Island</li>
+                <li><img src="images1/VillageNavala.jpeg" alt="Village" />Navala Village</li>
+                <li><img src="images1/Sand DunesSigatoka.jpeg" alt="Sand Dunes" />Sigatoka Sand Dunes</li>
+            </ul>
+        </div>
+
+        <div class="destination-overview">
+            <h3>Why Visit?</h3>
+            <ul class="destination-details">
+                <li><img src="images1/BeachRelax.jpeg" alt="Beach" />Relax on picturesque beaches</li>
+                <li><img src="images1/BeachRelax.jpeg" alt="Adventure" />Engage in thrilling water adventures</li>
+                <li><img src="images1/LocalsConnect.jpeg" alt="Locals" />Connect with warm and hospitable locals</li>
+            </ul>
+        </div>
+
+        <div class="destination-gallery">
+            <img src="images1/Beautiful.jpeg" alt="Beautiful Beach" class="feature-image" />
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div>
+            Follow Us:
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">X</a>
+            <a href="#" target="_blank">Tiktok</a>
+        </div>
+        <div>
+            &copy; 2024 Global Safari Ventures. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
